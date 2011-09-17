@@ -9,7 +9,6 @@ describe User do
       user.draw_gacha!
     end
     it do
-      p user.items
       user.items.length.should == 1
     end
   end
