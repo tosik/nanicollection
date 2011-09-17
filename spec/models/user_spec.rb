@@ -12,4 +12,10 @@ describe User do
       user.items.length.should == 1
     end
   end
+  context do
+    let!(:item) { Item.create }
+    it do
+      user.draw_gacha!.should == item
+    end
+  end
 end

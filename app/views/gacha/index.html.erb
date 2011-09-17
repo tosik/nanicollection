@@ -2,3 +2,7 @@
 <form method="post" action="/gacha/draw">
 <input type="submit" value="draw">
 </form>
+
+<% if @drawn_item %>
+<p>drawn item is '<%= @drawn_item.name %>'</p>
+<% end %>

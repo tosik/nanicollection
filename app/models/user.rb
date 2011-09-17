@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_many :inventories
 
   def draw_gacha!
-    items << Item.first
+    item = Item.first
+    items << item
+    item
   end
 end
