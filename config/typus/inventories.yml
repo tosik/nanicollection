@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Inventory:
+  fields:
+    default: item_id, user_id
+    form: item_id, user_id
+  relationships: 
+  application: Application
