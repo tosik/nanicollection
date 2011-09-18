@@ -13,9 +13,11 @@ describe User do
     end
   end
   context do
-    let!(:item) { Item.create }
+    before do
+      Item.create
+    end
     it do
-      user.draw_gacha!.should == item
+      user.draw_gacha!.class.should == Item
     end
   end
 end

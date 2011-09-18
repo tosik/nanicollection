@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_many :inventories
 
   def draw_gacha!
-    item = Item.first
+    item = Item.order('RANDOM()').first
     items << item
     item
   end
